@@ -1,5 +1,5 @@
 variable "crn" {
-  type        = Power Systems Virtual Server
+  type        = string
   description = "Power Systems Virtual Server CRN"
 }
 variable "memory" {
