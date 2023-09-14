@@ -1,5 +1,5 @@
 variable "crn" {
-  type        = string
+  type        = Power Systems Virtual Server
   description = "Power Systems Virtual Server CRN"
 }
 variable "memory" {
@@ -9,7 +9,7 @@ variable "memory" {
 }
 variable "processors" {
   type        = number
-  default     = 0.25 
+  default     = 1.0
   description = "The number of vCPUs to assign to the VM as visible within the guest Operating System"
 }
 variable "instance_name" {
