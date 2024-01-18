@@ -50,7 +50,7 @@ variable "placement_group" {
 variable "rhcos_import_image" {
   type        = bool 
   default     = true
-  description = "Import image or use stock image" 
+  description = "Import image from Cloud Object Storage bucket" 
 }
 
 variable "service_instance_id" {
