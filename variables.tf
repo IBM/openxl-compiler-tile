@@ -29,7 +29,7 @@ variable "sys_type" {
 }
 variable "storage_type" {
   type        = string
-  default     = "tier1"
+  default     = "tier3"
   description = "The type of storage tier to assign for storage volume performance: 'tier1' or 'tier3'"
 }
 variable "ssh_key_name" {
