@@ -2,10 +2,10 @@ locals {
   placement_group = [for x in data.ibm_pi_placement_groups.cloud_instance_groups.placement_groups : x if x.name == var.placement_group]
   placement_group_id = length(local.placement_group) > 0 ? local.placement_group[0].id : ""
 }
-    
+
 data "ibm_pi_placement_groups" "cloud_instance_groups" {
   pi_cloud_instance_id = local.pid
-}    
+} 
 
 data "ibm_pi_key" "key" {
   pi_cloud_instance_id = local.pid
@@ -16,7 +16,7 @@ data "ibm_pi_network" "power_network" {
   pi_cloud_instance_id = local.pid
   pi_network_name      = var.network_name
 }
-
+    
 resource "ibm_pi_image" "rhcos_image_import" {
   pi_image_name             = var.rhcos_image_name
   pi_cloud_instance_id      = var.service_instance_id
