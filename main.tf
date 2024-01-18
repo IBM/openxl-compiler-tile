@@ -27,10 +27,8 @@ resource "ibm_pi_image" "rhcos_image_import" {
   pi_image_secret_key       = var.rhcos_image_secret_key
 }
 
-data "ibm_pi_image" "rhcos" {
-  depends_on = [ibm_pi_image.rhcos_image_import]
- 
-  pi_image_name        = var.rhcos_import_image ? ibm_pi_image.rhcos_image_import.pi_image_name : var.rhcos_image_name
+data "ibm_pi_image" "rhcos" { 
+  pi_image_name        = ibm_pi_image.rhcos_image_import.pi_image_name
   pi_cloud_instance_id = var.service_instance_id
 }
 
