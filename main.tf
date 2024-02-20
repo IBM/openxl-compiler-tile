@@ -23,8 +23,6 @@ resource "ibm_pi_image" "rhcos_image_import" {
   pi_image_bucket_name      = var.bucket_name
   pi_image_bucket_region    = var.rhcos_import_bucket_region
   pi_image_bucket_file_name = var.rhcos_import_image_filename
-  pi_image_access_key       = var.rhcos_image_access_key
-  pi_image_secret_key       = var.rhcos_image_secret_key
 }
 
 data "ibm_pi_image" "rhcos" { 
