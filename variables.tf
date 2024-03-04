@@ -70,6 +70,18 @@ variable "rhcos_import_image_filename" {
   description = "Cloud Object Storage filename"
 }
 
+variable "rhcos_image_access_key" {
+  type        = string
+  default     = "None" 
+  description = "Cloud Object Storage access key"
+}
+
+variable "rhcos_image_secret_key" {
+  type        = string
+  default     = "None" 
+  description = "Cloud Object Storage secret key"
+}
+
 variable "bucket_name" {
   type        = string 
   default     = "None"
