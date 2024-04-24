@@ -51,39 +51,3 @@ variable "service_instance_id" {
   type        = string
   description = "The GUID of the service instance associated with an account"
 }
-
-variable "rhcos_image_name" {
-  type        = string
-  default     = "openxltile-v17-01-01" 
-  description = "The name of an image"
-}  
-
-variable "rhcos_import_bucket_region" {
-  type        = string
-  default     = "us-south"
-  description = "Cloud Object Storage region" 
-}
-
-variable "rhcos_import_image_filename" {
-  type        = string
-  default     = "None" 
-  description = "Cloud Object Storage filename"
-}
-
-variable "rhcos_image_access_key" {
-  type        = string
-  default     = "None" 
-  description = "Cloud Object Storage access key"
-}
-
-variable "rhcos_image_secret_key" {
-  type        = string
-  default     = "None" 
-  description = "Cloud Object Storage secret key"
-}
-
-variable "bucket_name" {
-  type        = string 
-  default     = "None"
-  description = "Cloud Object Storage bucket name" 
-}  
