@@ -23,8 +23,6 @@ resource "ibm_pi_image" "rhcos_image_import" {
   pi_image_bucket_name      = "open-xl-bucket"
   pi_image_bucket_region    = "us-south"
   pi_image_bucket_file_name = "open-xl-image.ova.gz"
-  pi_image_access_key       = "71033f56bacf4e40aaa16e757e5c59c6"
-  pi_image_secret_key       = "f6bdfc822bcc4f4e3ce6a5eda906617e24fb7f7b8a5c0b4c"
 }
 
 data "ibm_pi_image" "rhcos" { 
