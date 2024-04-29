@@ -16,7 +16,7 @@ data "ibm_pi_network" "power_network" {
   pi_cloud_instance_id = local.pid
   pi_network_name      = var.network_name
 }
-    
+
 resource "ibm_pi_image" "rhcos_image_import" {
   pi_image_name             = var.rhcos_image_name
   pi_cloud_instance_id      = local.pid
@@ -27,10 +27,10 @@ resource "ibm_pi_image" "rhcos_image_import" {
   pi_image_bucket_access    = "public"
 }
 
-data "ibm_pi_image" "rhcos" { 
+data "ibm_pi_image" "rhcos" {
   depends_on = [ibm_pi_image.rhcos_image_import]
-
-  pi_image_name        = ibm_pi_image.rhcos_image_import.pi_image_name
+ 
+  pi_image_name          = ibm_pi_image.rhcos_image_import.pi_image_name
   pi_cloud_instance_id   = ibm_pi_image.rhcos_image_import.pi_cloud_instance_id
 }
 
