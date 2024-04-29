@@ -19,7 +19,7 @@ data "ibm_pi_network" "power_network" {
     
 resource "ibm_pi_image" "rhcos_image_import" {
   pi_image_name             = var.rhcos_image_name
-  pi_cloud_instance_id      = var.service_instance_id
+  pi_cloud_instance_id      = local.pid
   pi_image_bucket_name      = "open-xl-bucket"
   pi_image_bucket_region    = "us-south"
   pi_image_bucket_file_name = "open-xl-image.ova.gz"
@@ -31,7 +31,7 @@ data "ibm_pi_image" "rhcos" {
   depends_on = [ibm_pi_image.rhcos_image_import]
 
   pi_image_name        = ibm_pi_image.rhcos_image_import.pi_image_name
-  pi_cloud_instance_id = var.service_instance_id
+  pi_cloud_instance_id   = ibm_pi_image.rhcos_image_import.pi_cloud_instance_id
 }
 
 resource "ibm_pi_instance" "instance" {
