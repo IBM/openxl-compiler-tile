@@ -47,6 +47,6 @@ variable "placement_group" {
 }
 variable "rhcos_image_name" {
   type        = string
-  default     = "openxltile-v17-01-01" 
+  default     = "openxltile-v17-01-02" 
   description = "The name of an image"
 }
