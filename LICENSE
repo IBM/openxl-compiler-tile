@@ -3,9 +3,9 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International Program License Agreement (i125-3301-15) applies.
 
 Program Name (Program Number):
-IBM Open XL C/C++ for AIX 17.1.1 (5765-J16)
-IBM Open XL C/C++ for AIX 17.1.1 (5765-J18)
-IBM Open XL C/C++ for AIX 17.1.1 (5725-C72)
+IBM Open XL C/C++ for AIX 17.1.2 (5765-J16)
+IBM Open XL C/C++ for AIX 17.1.2 (5765-J18)
+IBM Open XL C/C++ for AIX 17.1.2 (5725-C72)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -21,7 +21,8 @@ IBM, its suppliers and distributors provide the Redistributables and related doc
 
 The following are Redistributables:
 All packages in the following list may be redistributed:
-- openxlCcmp.17.1.1.lib
+- openxlCcmp.17.1.2.lib
+- openxlCcmp.17.1.2.tools
 - xlC.rte
 - xlC.aix61.rte
 - xlC.msg.Ja_JP.rte
@@ -60,6 +61,7 @@ Licensee can deploy the Program (if supported) using full capacity licensing, su
 
 In addition to the entitlements required for the Program directly, Licensee must obtain entitlements for this Program sufficient to cover the Virtual Processor Cores for the systems on which the resources managed or processed by the Program reside.
 
-L/N:  L-JYIP-CH5PH8
-D/N:  L-JYIP-CH5PH8
-P/N:  L-JYIP-CH5PH8
+
+L/N: L-WWPD-YDQA72
+D/N: L-WWPD-YDQA72
+P/N: L-WWPD-YDQA72
