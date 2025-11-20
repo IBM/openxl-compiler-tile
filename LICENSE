@@ -3,9 +3,9 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International Program License Agreement (i125-3301-15) applies.
 
 Program Name (Program Number):
-IBM Open XL C/C++ for AIX 17.1.2 (5765-J16)
-IBM Open XL C/C++ for AIX 17.1.2 (5765-J18)
-IBM Open XL C/C++ for AIX 17.1.2 (5725-C72)
+IBM Open XL C/C++ for AIX 17.1.4 (5765-J16)
+IBM Open XL C/C++ for AIX 17.1.4 (5765-J18)
+IBM Open XL C/C++ for AIX 17.1.4 (5725-C72)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -20,28 +20,15 @@ The Program includes components that are Redistributable and they are listed bel
 IBM, its suppliers and distributors provide the Redistributables and related documentation without obligation of support and "AS IS", WITH NO WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTY OF TITLE, NON-INFRINGEMENT OR NON-INTERFERENCE AND THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
 
 The following are Redistributables:
-All packages in the following list may be redistributed:
-- openxlCcmp.17.1.2.lib
-- openxlCcmp.17.1.2.tools
-- xlC.rte
-- xlC.aix61.rte
-- xlC.msg.Ja_JP.rte
-- xlC.msg.en_US.rte
-- xlC.msg.ja_JP.rte
-- xlsmp.aix61.rte
+- libc++.adt
 - libc++.rte
 - libc++abi.rte
+- libomp.adt.include
+- libomp.rte
 - libunwind.rte
-- libc++.adt.include
-- xlsmp.msg.EN_US.rte
-- xlsmp.msg.JA_JP.rte
-- xlsmp.msg.Ja_JP.rte
-- xlsmp.msg.ZH_CN.rte
-- xlsmp.msg.Zh_CN.rte
-- xlsmp.msg.en_US.rte
-- xlsmp.msg.ja_JP.rte
-- xlsmp.msg.zh_CN.rte
-- xlsmp.rte
+- openxlCcmp.17.1.4.lib
+- openxlCcmp.17.1.4.tools
+
 
 The following units of measure may apply to Licensee's use of the Program.
 
@@ -62,6 +49,5 @@ Licensee can deploy the Program (if supported) using full capacity licensing, su
 In addition to the entitlements required for the Program directly, Licensee must obtain entitlements for this Program sufficient to cover the Virtual Processor Cores for the systems on which the resources managed or processed by the Program reside.
 
 
-L/N: L-WWPD-YDQA72
-D/N: L-WWPD-YDQA72
-P/N: L-WWPD-YDQA72
+L/N: L-CFNY-62BUMN
+D/N: L-CFNY-62BUMN
