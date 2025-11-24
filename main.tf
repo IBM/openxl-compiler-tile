@@ -14,7 +14,7 @@ data "ibm_pi_key" "key" {
 
 data "ibm_pi_network" "power_network" {
   pi_cloud_instance_id = local.pid
-  pi_network_name      = var.network_name
+  pi_network_id        = var.network_name
 }
 
 resource "ibm_pi_image" "rhcos_image_import" {
