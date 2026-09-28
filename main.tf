@@ -9,12 +9,12 @@ data "ibm_pi_placement_groups" "cloud_instance_groups" {
 
 data "ibm_pi_key" "key" {
   pi_cloud_instance_id = local.pid
-  pi_key_name          = var.ssh_key_name
+  pi_ssh_key_id        = var.ssh_key_name
 }
 
 data "ibm_pi_network" "power_network" {
   pi_cloud_instance_id = local.pid
-  pi_network_name      = var.network_name
+  pi_network_id        = var.network_name
 }
 
 resource "ibm_pi_image" "rhcos_image_import" {
